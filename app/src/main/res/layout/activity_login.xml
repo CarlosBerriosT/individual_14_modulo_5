@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEFF1"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="310dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="32dp"
+        android:text="Ingresa los Datos"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/edittext_background"
+        android:hint="Correo electrónico"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:background="@drawable/edittext_background"
+        app:layout_constraintTop_toBottomOf="@id/etEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="16dp" />
+
+    <CheckBox
+        android:id="@+id/cbRememberMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recuérdame"
+        app:layout_constraintTop_toBottomOf="@id/etPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="113dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/design_default_color_error"
+        android:text="Entrar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cbRememberMe" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
